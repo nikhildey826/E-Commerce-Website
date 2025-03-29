@@ -1,0 +1,168 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #6A93C2;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.section{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container{
+    height: 600px;
+    aspect-ratio: 1.8;
+    display: flex;
+    background-color:  #A9C5E8;
+    border-radius: 20px;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    font-size: 45px;
+    height: 100%;
+    width: 60%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.box1 .content{
+    padding: 30px;
+    height: 54%;
+}
+p {
+    font-family: 'Open Sans', sans-serif; /* Clean, readable sans-serif */
+    line-height: 1.6;
+    text-align: center;
+}
+
+.image{
+    height: 39.4%;
+}
+img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding: 0px;
+    border-radius: 0px 0px 0px 20px ;
+}
+.box2{
+    width: 40%;
+    padding:20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9C7B0;
+    border-radius: 0px 20px 20px 0px;
+
+}
+.login{
+    margin: 8px;
+    padding: 8px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.login-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+label{
+    font-size: 18px;
+    margin: 6px;
+}
+input{
+     padding: 8px;
+     margin: 6px;
+     font-size: 17px;
+     border: none;
+     border-radius: 4px;
+}
+input:focus{
+    outline: none;
+}
+.button{
+    text-align: center;
+}
+.button button{
+    padding:8px 24px 8px 24px;
+    margin: 6px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(48, 48, 117);
+    transition: all ease-in-out 0.3s;
+}
+.button button:hover{
+    background-color:#204779;
+    transform: scale(1.04);
+}
+.container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.Or{
+   text-align: center;
+   font-size: 14px;
+   margin: 6px;
+}
+.login-alternate  button{
+    padding: 7px;
+    margin: 6px;
+    width: 97%;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    background-color: #9d8787;
+     
+}
+.google-button button{
+    background-color: red;
+}
+.facebook-button button{
+    background-color: #4267B2;
+}
+button:hover{
+    scale: 1.04;
+}
+a{
+    color:blue;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+a:hover{
+    color: green;
+    transform: scale(1.04);
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        background-color: transparent;
+        box-shadow: none;
+        margin: auto; 
+        height: auto; 
+        justify-content: center;
+    }
+
+    .box1 {
+        display: none; 
+    }
+
+    .box2 {
+        border-radius: 30px;
+        padding:20px;
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+}
